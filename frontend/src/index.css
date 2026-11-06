@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "IBM Plex Sans", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --color-paper: #f5f6f3;
+  --color-surface: #ffffff;
+  --color-ink: #16211f;
+  --color-muted: #5d6b67;
+  --color-line: #dde2de;
+  --color-brand: #0e5a4a;
+  --color-brand-soft: #e3efeb;
+  --color-gain: #1b7f4b;
+  --color-loss: #b3402f;
+}
+
+body { @apply bg-paper text-ink font-sans antialiased; font-variant-numeric: tabular-nums; }
+:focus-visible { outline: 2px solid var(--color-brand); outline-offset: 2px; }
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }
